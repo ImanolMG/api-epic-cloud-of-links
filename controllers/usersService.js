@@ -97,6 +97,6 @@ const deleteUser = (req, res) => {
 module.exports = {
     usernameValidate,
     signup,
-    login,
-    deleteUser
+/*    login,
+    deleteUser*/
 }
