@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('epic-cloud-of-links-back:server');
+var debug = require('debug')('api-epic-cloud-of-links:server');
 var http = require('http');
 
 /**
