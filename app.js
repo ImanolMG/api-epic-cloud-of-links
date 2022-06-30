@@ -7,6 +7,8 @@ const cors = require('cors')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var linksRouter = require('./routes/links');
+
 var app = express();
 
 
@@ -23,7 +25,7 @@ app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.use('/links',linksRouter);
 
 app.use(function(req, res, next) {
     next(createError(404));
