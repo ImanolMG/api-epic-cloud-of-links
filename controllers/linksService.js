@@ -70,12 +70,11 @@ const deleteLink = (req, res) => {
 const updateLink = (req, res) => {
     console.log('Editar => in')
         const link = {
-            idlink : req.body.idlink,
             title : req.body.title,
             category : req.body.category,
             body_link : req.body.body_link
         }
-        linksDAO.updateLink(link, (data) => {
+        linksDAO.updateLink(link, req.params.idlink, (data) => {
             res.send({
                 status: true,
                 message: 'Lugar editado exitosamente'

@@ -11,7 +11,7 @@ router.put('/edit', linksService.updateLink);
 router.get('/getAllLinks', linksService.getAllLinks);
 router.delete('/deleteLinks/:idlink', linksService.deleteLink);
 router.get('/getLink/:idlink', linksService.getLink);
-router.put('/edit', linksService.updateLink)
+router.put('/edit/:idlink', linksService.updateLink);
 
 
 module.exports = router;
