@@ -41,7 +41,7 @@ const signup = (req, res) => {
     })
 }
 
-/*
+
 
 const login = (req,res) => {
     let username = req.body.username
@@ -68,7 +68,7 @@ const login = (req,res) => {
         }
     })
 }
-*/
+
 
 
 /*
@@ -97,6 +97,6 @@ const deleteUser = (req, res) => {
 module.exports = {
     usernameValidate,
     signup,
-    login,
-    deleteUser
+   login,
+    // deleteUser
 }
