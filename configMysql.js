@@ -2,7 +2,7 @@ const mysql = require('mysql');
 
 
 const config = {
-    host : '54.90.160.31',
+    host : '54.226.53.92',
     user : 'imanol',
     database: 'dbecol',
     password: 'password',
