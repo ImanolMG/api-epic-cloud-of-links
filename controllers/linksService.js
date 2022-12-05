@@ -71,13 +71,15 @@ const updateLink = (req, res) => {
     console.log('Editar => in')
         const link = {
             title : req.body.title,
+            body_link : req.body.body_link,
             category : req.body.category,
-            body_link : req.body.body_link
+           
         }
+        
         linksDAO.updateLink(link, req.params.idlink, (data) => {
             res.send({
                 status: true,
-                message: 'Lugar editado exitosamente'
+                message: 'Enlace actualizado exitosamente'
             })
         }, err => {
             res.send({

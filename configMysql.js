@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 
 const config = {
-    host : 'localhost',
-    user : 'root',
-    database: 'epic-cloud-of-links-bd-pruebas',
-    password: 'Hacker2020',
+    host : '3.210.73.96',
+    user : 'imanol',
+    database: 'dbecol',
+    password: 'password',
 };
 
 const conn = mysql.createConnection(config);
