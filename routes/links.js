@@ -7,7 +7,7 @@ const router = Router();
 
 
 router.post('/add', linksService.add_link);
-router.put('/edit', linksService.updateLink);
+//router.put('/edit', linksService.updateLink);
 router.get('/getAllLinks', linksService.getAllLinks);
 router.delete('/deleteLinks/:idlink', linksService.deleteLink);
 router.get('/getLink/:idlink', linksService.getLink);
