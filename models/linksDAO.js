@@ -12,9 +12,10 @@ module.exports = {
         })
     },
     updateLink : (link, idlink, callback)=>{
-        console.log('Llega a actualizar')
+        console.log(link)
+        console.log(idlink)
         let sql = 'UPDATE links SET ? WHERE idlink = ?'
-        bd.query(sql,link, idlink,(err,data) => {
+        bd.query(sql, link, idlink, (err,data) => {
             if(err)
                 return callback(null)
             else
